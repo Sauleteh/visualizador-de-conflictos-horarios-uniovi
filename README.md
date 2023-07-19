@@ -1,4 +1,4 @@
-# visualizador de horarios de la Universidad de Oviedo
+# Visualizador de horarios de la Universidad de Oviedo
 Un programa que te permite visualizar en forma de calendario los PDF de los horarios de las carreras que se cursan en la EPI Gijón de la Universidad de Oviedo con objeto de observar la distribución de las horas y si se produciría un conflicto de horarios entre asignaturas, siendo posible escoger en qué grupos (de teoría, de PL y de TG) y así poder optar por unos grupos u otros en función de si te vienen bien o no.
 
 **Disclaimer**: Este programa no está afiliado con la Universidad de Oviedo, es un programa creado con la intención de facilitar la observación de los horarios antes de escoger y pagar qué asignaturas se quieren cursar durante un año.

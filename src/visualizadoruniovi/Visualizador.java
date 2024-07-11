@@ -331,6 +331,7 @@ public class Visualizador extends javax.swing.JFrame {
                 oe.close();
                 pd.close();
                 //System.out.println(horarioSinProcesar);
+                //System.out.println(comienzoSinProcesar);
                 
                 // Ahora que tenemos todos los datos sin procesar, comenzamos procesando el día que da comienzo las clases
                 boolean encontrado = false;
@@ -338,9 +339,9 @@ public class Visualizador extends javax.swing.JFrame {
                 input = new Scanner(comienzoSinProcesar);
                 while (!encontrado && input.hasNext())
                 {
-                    if (aciertos == 0 && input.next().equals("comienzo")) aciertos++;
+                    if (aciertos == 0 && input.next().equals("1comie2n2zo")) aciertos++;
                     else if (aciertos == 1 && input.next().equals("del")) aciertos++;
-                    else if (aciertos == 2 && input.next().equals("primer")) aciertos++;
+                    else if (aciertos == 2 && input.next().equals("prim34er")) aciertos++;
                     else if (aciertos == 3 && input.next().equals("cuatrimestre")) encontrado = true;
                     else aciertos = 0;
                 }
@@ -353,7 +354,7 @@ public class Visualizador extends javax.swing.JFrame {
 
                 int dia = input.nextInt();
                 input.next();
-                String mes = input.next();
+                String mes = Utilidades.removeNumbersFromString(input.next());
                 input.next();
                 int year = input.nextInt();
                 input.close();

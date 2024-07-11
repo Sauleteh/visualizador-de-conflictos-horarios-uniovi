@@ -19,6 +19,18 @@ public class Utilidades
     private static int mesLunes;
     private static int yearLunes;
     
+    public static String removeNumbersFromString(String str) {
+        String newStr = "";
+        
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) < '0' || str.charAt(i) > '9') {
+                newStr += str.charAt(i);
+            }
+        }
+        
+        return newStr;
+    }
+    
     /**
      * Cuenta el número de ocurrencias de una palabra en un String
      * @param text es el String donde se van a buscar las ocurrencias

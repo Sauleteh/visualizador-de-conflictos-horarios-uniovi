@@ -384,10 +384,15 @@ public class Visualizador extends javax.swing.JFrame {
                     {
                         while (linea[ind].equals("")) // Comprobación de horario vacío el lunes
                         {
-                            // Aquí pasa algo curioso y es que a veces el calendario tiene cuatro espacios en blanco por celda vacía y otras veces tiene tres. Esto
+                            // Aquí pasa algo curioso y es que a veces el calendario tiene cinco, cuatro o tres espacios en blanco por celda vacía. Esto
                             // produce un problema y es que nunca sabremos con eficiencia si se está usando tres o cuatro espacios por lo que se comprobarán ambos
                             // casos, teniendo prioridad el de cuatro espacios.
-                            if (linea[ind+1].equals("") && linea[ind+2].equals("") && linea[ind+3].equals(""))
+                            if (linea[ind+1].equals("") && linea[ind+2].equals("") && linea[ind+3].equals("") && linea[ind+4].equals(""))
+                            {
+                                ind += 5;
+                                diaSemana++;
+                            }
+                            else if (linea[ind+1].equals("") && linea[ind+2].equals("") && linea[ind+3].equals(""))
                             {
                                 ind += 4;
                                 diaSemana++;

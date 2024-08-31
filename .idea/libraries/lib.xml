@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/tabula-1.0.5-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/miglayout-4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
